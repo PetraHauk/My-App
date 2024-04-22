@@ -91,7 +91,7 @@ dialog {
 
 dialog img,
 video {
-  height: 50%;
+  height: 70%;
   object-fit: contain;
 }
 
