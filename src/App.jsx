@@ -14,7 +14,6 @@ const App = () => {
       <h1 className="text-2xl m-5">My App</h1>
 
       <Routes>
-
         <Route path="/" element={<Layout />} />
         <Route index element={<Home />} />
         <Route path={"/profile"} element={<Profile />} />
