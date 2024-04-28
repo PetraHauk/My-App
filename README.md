@@ -1,6 +1,6 @@
-**Viikko 5**
+**Forms**
 
-Open [link text here](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko5/) to view it in the browser.
+Open [forms page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/forms/) to view it in the browser.
 
 
 
