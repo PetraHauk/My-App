@@ -1,4 +1,4 @@
-import Home from "../views/Home.jsx";
+import Home from "../../views/Home.jsx";
 import PropTypes from "prop-types";
 
 const Button = (props) => {

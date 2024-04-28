@@ -19,7 +19,7 @@ const useMedia = () => {
     }));
 
     setMediaArray(mediaWithUsers);
-  }
+  };
 
   useEffect(() => {
     getMedia();
@@ -36,8 +36,56 @@ const useUser = () => {
       import.meta.env.VITE_AUTH_API + '/users/' + userId,
     );
     return userResult;
+  };
+
+  const getUserByToken = async (token) => {
+    const options = {
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+    };
+
+    const tokenResult = await fetchData(
+        import.meta.env.VITE_AUTH_API + '/users/token',
+        options,
+        );
+    return tokenResult;
+  };
+
+  const register = async (inputs) => {
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(inputs),
+    };
+    const registerResult = await fetchData(
+      import.meta.env.VITE_AUTH_API + '/users',
+      options,
+    );
+    return registerResult;
   }
-  return {getUserById};
+
+  return {getUserById, getUserByToken, register};
 };
 
-export {useMedia, useUser};
+const useAuthentication = () => {
+  const login = async (inputs) => {
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(inputs)
+    };
+    const loginResult = await fetchData(
+      import.meta.env.VITE_AUTH_API + '/auth/login',
+      options
+    );
+    return loginResult;
+  };
+  return {login};
+};
+
+export {useMedia, useUser, useAuthentication};
