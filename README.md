@@ -1,6 +1,6 @@
 **Viikko 5**
 
-Open [link text here](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko5/) to view it in the browser.
+Open [context page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/context/) to view it in the browser.
 
 
 
