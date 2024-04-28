@@ -3,38 +3,40 @@ import {useAuthentication} from "../hooks/ApiHooks.js";
 import {useEffect, useState} from "react";
 
 export const Profile = () => {
-  const {user, setuser} = useState(null);
+  const [user, setuser] = useState(null);
   const {getUserByToken} = useAuthentication();
 
 
-  useEffect(() => {
-    const getUser = async () => {
-      try {
-        const token = localStorage.getItem("token");
-        const userData = await getUserByToken(token);
-        setuser(userData.user);
-      } catch (e) {
-        console.error(e);
-      }
+  const getUser = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const userData = await getUserByToken(token);
+      setUser(userData.user);
+    } catch (error) {
+      console.log(error.message);
     }
+  };
+
+  useEffect(() => {
     getUser();
   }, []);
 
-  return <div>
-    <h2 class="m-5 text-4xl">Profiilinäkymä</h2>
-
-    <p class="text-2xl font-bold">Tämä on profiilinäkymä.</p>
-    <p class="m-2">
-      <Link to="/">Takaisin etusivulle</Link>
-    </p>
+  return (
     <div>
-      {user  && (
-        <>
-          <p>Käyttäjätunnus: {user.username}</p>
-          <p>Sähköposti: {user.email}</p>
-          <p>Luotu: {user.created_at}</p>
-        </>
-      )}
+      <h2 className="text-2xl font-bold">Tämä on minun profiilisivu</h2>
+
+      <p>
+        <Link to="/">Navigoi takaisin etusivulle</Link>
+      </p>
+      <div>
+        {user && (
+          <>
+            <p>Käyttäjätunnus: {user.username} </p>
+            <p>email: {user.email} </p>
+            <p>luotu: {new Date(user.created_at).toLocaleString('fi-FI')}</p>
+          </>
+        )}
+      </div>
     </div>
-  </div>
+  );
 }
