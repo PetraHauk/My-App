@@ -2,7 +2,7 @@
 
 Open [upload exersize](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/upload/) to view it in the browser.
 
-En saanut toimimaan oikein.
+This does not work correclty
 
 
 # React + Vite
