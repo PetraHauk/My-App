@@ -1,6 +1,6 @@
-**Viikko 5**
+**Hooks**
 
-Open [link text here](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko5/) to view it in the browser.
+Open [hooks branch](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/hooks/) to view it in the browser.
 
 
 
