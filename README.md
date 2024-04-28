@@ -1,6 +1,6 @@
 **Context**
 
-Open [context page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/context/) to view it in the browser.
+Open [context assingment page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/context/) to view it in the browser.
 
 
 # React + Vite
