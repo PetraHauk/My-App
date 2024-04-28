@@ -2,6 +2,7 @@ import {useNavigate} from 'react-router-dom';
 import {useAuthentication} from '../hooks/ApiHooks.js';
 import useForm from '../hooks/formhooks.js';
 import Button from './UI/Button.jsx';
+import { useUserContext } from '../hooks/contextHooks';
 
 // LoginForm.jsx
 const LoginForm = () => {
@@ -13,7 +14,21 @@ const LoginForm = () => {
     password: '',
   };
 
+
+  const { handleLogin } = useUserContext();
+
   const doLogin = async () => {
+    try {
+      handleLogin(inputs);
+    } catch (e) {
+      alert(e.message);
+    }
+  };
+
+  /*
+
+  const doLogin = async () => {
+
     console.log('doLogin', inputs);
     try {
       const userData = await login(inputs);
@@ -25,12 +40,17 @@ const LoginForm = () => {
     }
   };
 
+   */
+
   const {handleSubmit, handleInputChange, inputs} = useForm(
     doLogin,
     initValues,
   );
 
   console.log(inputs);
+
+
+
 
   return (
     <>

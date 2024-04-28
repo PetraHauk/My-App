@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom";
-import {useAuthentication} from "../hooks/ApiHooks.js";
+import {useUser} from "../hooks/ApiHooks.js";
 import {useEffect, useState} from "react";
 
 export const Profile = () => {
-  const {user, setuser} = useState(null);
-  const {getUserByToken} = useAuthentication();
+  const [user, setUser] = useState(null);
+  const {getUserByToken} = useUser();
 
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export const Profile = () => {
       try {
         const token = localStorage.getItem("token");
         const userData = await getUserByToken(token);
-        setuser(userData.user);
+        setUser(userData.user);
       } catch (e) {
         console.error(e);
       }
