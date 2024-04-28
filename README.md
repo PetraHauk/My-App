@@ -1,6 +1,6 @@
 **Upload**
 
-Open [upload exersize](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/upload/) to view it in the browser.
+Open [upload assingment page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/upload/) to view it in the browser.
 
 This does not work correclty
 
