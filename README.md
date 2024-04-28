@@ -1,6 +1,6 @@
 **Hooks**
 
-Open [hooks branch](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/hooks/) to view it in the browser.
+Open [hooks assingment page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/hooks/) to view it in the browser.
 
 
 
