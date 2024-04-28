@@ -1,6 +1,6 @@
 **Forms**
 
-Open [forms page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/forms/) to view it in the browser.
+Open [forms assingment page](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/forms/) to view it in the browser.
 
 
 
