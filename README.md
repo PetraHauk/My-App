@@ -1,7 +1,8 @@
-**Viikko 5**
+**Upload**
 
-Open [link text here](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko5/) to view it in the browser.
+Open [upload exersize](https://users.metropolia.fi/~petramha/WebSovelluskehitys/Viikko6/upload/) to view it in the browser.
 
+En saanut toimimaan oikein.
 
 
 # React + Vite
